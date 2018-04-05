@@ -29,6 +29,11 @@ export default {
     onChange () {
       this.$emit('change', this.selected)
     }
+  },
+  watch: {
+    value (newValue) {
+      this.selected = newValue;
+    },
   }
 }
 </script>
